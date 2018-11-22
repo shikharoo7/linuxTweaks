@@ -1,0 +1,30 @@
+import lvm_read
+import csv
+import numpy as np
+from numpy import genfromtxt
+from pandas import read_csv
+#import matplotlib.pyplot as plt
+#import urllib
+
+filename = 'CPA5_R_LR_AMAN_14-41-03.lvm'
+#print(filename)
+sample_file = open('Thu25Oct2018/lvm/'+filename).read()
+with open('samplefile.csv', 'w') as f:
+    f.write(sample_file)
+f.close()
+#print(sample_file)
+#print(sample_file)
+df = read_csv('kuchbhi.csv')
+print(df)
+
+data = np.genfromtxt('kuchbhi.csv', usecols=(0, -7, -6, -5))
+print(data)
+
+
+#my_data = np.genfromtxt('samplefile.csv', delimiter=',')
+#print(my_data)
+#matrix = np.load(sample_file)
+#with open('matrix.csv', 'wb') as f:
+#    f.write(matrix)
+#f.close()
+#print(matrix)
