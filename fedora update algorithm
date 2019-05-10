@@ -1,0 +1,1 @@
+The zchunk algorithm splits the file into independent chunks. This helps in dealing with ‘delta’ or changes as you download only the changed chunks while downloading the new version of a file.
