@@ -1,1 +1,2 @@
 The zchunk algorithm splits the file into independent chunks. This helps in dealing with ‘delta’ or changes as you download only the changed chunks while downloading the new version of a file.
+With zchunk, dnf will only download the difference between the metadata of the current version and the earlier versions.
