@@ -7,3 +7,7 @@ ia32-libs -> the repo is obsolete and as been replaced. Copy the new lib ids gen
 For correct Java installation: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
 
 Anaconda Permission Denied Error [13]: sudo chown -R user anaconda3, where 'user; is your username
+
+Adjust Linux clock to use local time and use bios time:
+$ timedatectl set-local-rtc 1 --adjust-system-clock
+$ timedatectl
