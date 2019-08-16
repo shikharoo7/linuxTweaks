@@ -9,5 +9,4 @@ For correct Java installation: https://www.digitalocean.com/community/tutorials/
 Anaconda Permission Denied Error [13]: sudo chown -R user anaconda3, where 'user; is your username
 
 Adjust Linux clock to use local time and use bios time:
-$ timedatectl set-local-rtc 1 --adjust-system-clock
-$ timedatectl
+$ timedatectl set-local-rtc 1 --adjust-system-clock && timedatectl
