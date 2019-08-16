@@ -11,4 +11,4 @@ Anaconda Permission Denied Error [13]: sudo chown -R user anaconda3, where 'user
 Adjust Linux clock to use local time and use bios time:
 $ timedatectl set-local-rtc 1 --adjust-system-clock && timedatectl
 
-Install Card reader drivers: $ sudo apt-get install --reinstall udisks2
+Install Card reader drivers: $ sudo apt-get install --reinstall udisks2 and Reboot.
