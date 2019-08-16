@@ -14,3 +14,5 @@ $ timedatectl set-local-rtc 1 --adjust-system-clock && timedatectl
 Install Card reader drivers: $ sudo apt-get install --reinstall udisks2 and Reboot.
 
 When ubuntu is not able to recognize exfat format: $ sudo apt install exfat-fuse exfat-utils
+
+Follow this guide to start with linux tweaks: https://averagelinuxuser.com/30-things-to-do-after-installing-ubuntu-18-04-lts/
