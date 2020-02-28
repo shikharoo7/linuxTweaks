@@ -2,13 +2,14 @@
 
 #Cyberoam Linux Client
 
-* To solve the issue of [bash: ./crclient: No such file or directory]
+* To solve the issue of [bash: ./crclient: No such file or directory] even when the file is inside the directory
 ```bash
 sudo apt-get install ia32-libs
+```
+If the above command returns ia32-libs -> the repo is obsolete and as been replaced, copy the new lib ids generated after the result of execution of above command is obtained [lib32ncurses5 lib32z1] or run the command mentioned below:
+```bash
 sudo apt-get install lib32ncurses5 lib32z1
 ```
-If the above command returns 
-ia32-libs -> the repo is obsolete and as been replaced. Copy the new lib ids generated after the result of execution of above command is obtained. [lib32ncurses5 lib32z1]
 
 * For correct Java installation: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
 
