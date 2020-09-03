@@ -6,6 +6,12 @@
 
 * To disable certain peripheral installation: https://phpocean.com/tutorials/computer-skills/how-to-disable-the-touchscreen-drivers-permanently-on-ubuntu-17-10/63
 
+* To install Microsoft PowerShell Tools: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7
+
+* To install Miniconda3: https://varhowto.com/install-miniconda-ubuntu-20-04/
+
+* To Install nVIDIA-Optimus Tools: https://www.omgubuntu.co.uk/2019/09/nvidia-optimus-linux-switching-applet
+
 * Adjust Linux clock to use local time and use bios time:
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock && timedatectl
