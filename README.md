@@ -4,6 +4,8 @@
 
 * For correct Java installation: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-18-04
 
+* To disable certain peripheral installation: https://phpocean.com/tutorials/computer-skills/how-to-disable-the-touchscreen-drivers-permanently-on-ubuntu-17-10/63
+
 * Adjust Linux clock to use local time and use bios time:
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock && timedatectl
