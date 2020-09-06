@@ -51,3 +51,26 @@ If the above command returns ia32-libs -> the repo is obsolete and as been repla
 ```bash
 sudo apt-get install lib32ncurses5 lib32z1
 ```
+
+* If you see a missing firmware warning while execution of an update command, like this:
+```bash
+W: Possible missing firmware /lib/firmware/i915/tgl_dmc_ver2_04.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/skl_guc_33.0.0.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/bxt_guc_33.0.0.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/kbl_guc_33.0.0.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/glk_guc_33.0.0.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/kbl_guc_33.0.0.bin for module i915
+W: Possible missing firmware /lib/firmware/i915/icl_guc_33.0.0.bin for module i915
+```
+then, use the included ```install_missing_intel_linux_firmware_driver.sh``` file to download each firmware definition.
+
+Download the script, and make it executable:
+```bash
+chmod +x install_missing_intel_linux_firmware_driver.sh
+```
+and then use the scrit as:
+```bash
+sudo ./install_missing_intel_linux_firmware_driver.sh <firmware_name>
+```
+where ```<firmware_name>``` is replaced with the string like ```tgl_dmc_ver2_04.bin```.
+This method only works for ```i915``` drivers.
