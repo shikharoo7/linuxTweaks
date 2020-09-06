@@ -33,6 +33,7 @@ sudo apt-get install --reinstall exfat-fuse exfat-utils
 * When you encounter missing firmware errors, install debian-installer:
 ```bash
 sudo apt-get install debian-installer
+```
 
 * Anaconda Permission Denied Error [13]:
 ```bash
