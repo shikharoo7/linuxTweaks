@@ -12,6 +12,8 @@
 
 * To Install nVIDIA-Optimus Tools: https://www.omgubuntu.co.uk/2019/09/nvidia-optimus-linux-switching-applet
 
+* To fix firmware errors for rtl8125a-3.fw and rtl8168fp-3.fw: http://forums.debian.net/viewtopic.php?f=5&t=146342
+
 * Adjust Linux clock to use local time and use bios time:
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock && timedatectl
