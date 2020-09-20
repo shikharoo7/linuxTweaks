@@ -52,6 +52,15 @@ If the above command returns ia32-libs -> the repo is obsolete and as been repla
 sudo apt-get install lib32ncurses5 lib32z1
 ```
 
+* To enable partner repositories in Ubuntu (Command Line Way):
+
+1. Open the sources.list file: gksudo gedit /etc/apt/sources.list (or with the command line editor of your choice, sudo nano /etc/apt/sources.list would use nano on the command line without a GUI)
+2. Add the partner repositories by removing the # in front of the following lines (focal is the version of your Ubuntu installation, it may differ, so use the codename of the release you are using instead of 'focal'. If you're not sure run ```lsb_release -c``` to find out.)
+```bash
+# deb http://archive.canonical.com/ubuntu maverick partner
+# deb-src http://archive.canonical.com/ubuntu maverick partner
+```
+
 * If you see a missing firmware warning while execution of an update command, like this:
 ```bash
 W: Possible missing firmware /lib/firmware/i915/tgl_dmc_ver2_04.bin for module i915
