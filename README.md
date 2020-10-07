@@ -14,6 +14,11 @@
 
 * To fix firmware errors for rtl8125a-3.fw and rtl8168fp-3.fw: http://forums.debian.net/viewtopic.php?f=5&t=146342
 
+* Initial Install command to setup new system
+```bash
+sudo apt-get install ubuntu-restricted-extras vlc gnome tweaks chrome-gnome-shell firefox-gnome-shell rar unrar p7zip-full p7zip-rar wine winetricks build-essential
+```
+
 * Adjust Linux clock to use local time and use bios time:
 ```bash
 timedatectl set-local-rtc 1 --adjust-system-clock && timedatectl
@@ -41,7 +46,7 @@ sudo chown -R user anaconda3
 ```
 -> where 'user' is your username
 
-#Cyberoam Linux Client
+# Cyberoam Linux Client
 
 * To solve the issue of [bash: ./crclient: No such file or directory] even when the file is inside the directory
 ```bash
