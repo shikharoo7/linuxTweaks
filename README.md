@@ -40,6 +40,11 @@ sudo apt-get install --reinstall exfat-fuse exfat-utils
 sudo apt-get install debian-installer
 ```
 
+* To run DVDs
+```bash
+sudo apt-get install libdvd-pkg && sudo dpkg-reconfigure libdvd-pkg
+```
+
 * Anaconda Permission Denied Error [13]:
 ```bash
 sudo chown -R user anaconda3
