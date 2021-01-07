@@ -9,6 +9,9 @@
 * To install Microsoft PowerShell Tools: https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7
 
 * To install Miniconda3: https://varhowto.com/install-miniconda-ubuntu-20-04/ and configure conda using: https://coderefinery.github.io/reproducible-research/03-dependencies/
+```bash
+while read requirement; do conda install --yes $requirement || pip install $requirement; done < requirements.txt
+```
 
 * To Install nVIDIA-Optimus Tools: https://www.omgubuntu.co.uk/2019/09/nvidia-optimus-linux-switching-applet
 
